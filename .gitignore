@@ -1,0 +1,8 @@
+# Project exclude paths
+/liuliu_common/target/
+/liuliu_common_interface/target/
+/liuliu_common_service/target/
+/liuliu_common_web/target/
+/liuliu_pojo/target/
+/liuliu_service_goods/target/
+/liuliu_web_manager/target/

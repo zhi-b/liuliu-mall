@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="liuliu_service_goods" />
+        <module name="liuliu_common_interface" />
+        <module name="liuliu_pojo" />
+        <module name="liuliu_common" />
+        <module name="liuliu_web_manager" />
+        <module name="liuliu_common_service" />
+        <module name="liuliu_common_web" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
