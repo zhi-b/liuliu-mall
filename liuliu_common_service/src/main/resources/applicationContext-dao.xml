@@ -10,8 +10,9 @@
 >
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.liuliu.dao"/>
+        <property name="basePackage" value="com.liuliu.mapper"/>
     </bean>
+    <!--mybatis-plus：sqlSessionFactory-->
     <bean id="sqlSessionFactory" class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="globalConfig" ref="globalConfig"/>
@@ -23,6 +24,7 @@
         </property>
     </bean>
 
+    <!--数据源-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}"/>
         <property name="url" value="${jdbc.url}"/>
@@ -32,6 +34,7 @@
         <property name="minIdle" value="5"/>
     </bean>
 
+    <!--mybatis-plus全局配置-->
     <bean id="globalConfig" class="com.baomidou.mybatisplus.core.config.GlobalConfig">
         <property name="dbConfig" ref="dbConfig"/>
     </bean>
@@ -48,6 +51,7 @@
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
+
     <!--
         开启事务控制的注解支持
         注意：此处必须加入proxy-target-class="true"，

@@ -49,6 +49,7 @@
             <port>9001</port>
             <!-- 请求路径 -->
             <path>/</path>
+            <ignorePackaging>true</ignorePackaging>
           </configuration>
         </plugin>
       </plugins>
